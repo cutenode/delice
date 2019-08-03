@@ -45,7 +45,7 @@ Running `delice` by itself will check the current working directory's `node_modu
 
 ## Reasoning
 
-Currenyly, _most_ well-maintained tooling around licensing is pay-to-play. You need to pay to understand what you're consuming and how. The intent of delice (and liblice and conformance) is to help begin to surface more of this information in an open-source, accessible way.
+Currently, _most_ well-maintained tooling around licensing is pay-to-play. You need to pay to understand what you're consuming and how. The intent of delice (and liblice and conformance) is to help begin to surface more of this information in an open-source, accessible way.
 
 delice is intended to be the CLI approach to this problem. Ideally, you can pop a delice configuration into your project and then fail if certain license conditions occur with the modules in your application. Additionally, being able to install a delice config as a dependency in your projects and validate via that path would be the end-game.
 
