@@ -28,5 +28,13 @@
   "devDependencies": {
     "standard": "^12.0.1"
   },
-  "description": ""
+  "description": "delice is a CLI intended to help you gain insight into your dependencies licenses.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cutenode/delice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cutenode/delice/issues"
+  },
+  "homepage": "https://github.com/cutenode/delice#readme"
 }
