@@ -10,7 +10,7 @@ exports.describe = 'Check licenses in the current application or project, or a p
 
 // Builds out command flags and descriptions
 exports.builder = function (yargs) {
-  return yargs.usage('delice')
+  return yargs.usage('delice [command] [options]')
     .option('json', {
       alias: 'j',
       demandOpton: false,
