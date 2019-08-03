@@ -9,6 +9,12 @@
   "bin": {
     "delice": "bin/cli.js"
   },
+  "files": [
+    "bin/",
+    "commands/",
+    "helpers/",
+    "helpers.js"
+  ],
   "keywords": [],
   "author": "Tierney Cyren <hello@bnb.im>",
   "license": "MIT",
