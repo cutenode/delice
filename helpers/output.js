@@ -25,14 +25,26 @@ function output(rawJSON, license) {
 
     return successOutput
   } else {
+    let errorMessage = `Error: ${chalk.red(rawJSON.conformance.error)}`;
+    let errorChalk = chalk.red;
+
+    if (rawJSON.licenseExpression === 'UNLICENSED') {
+      errorMessage = `Warning: ${chalk.red('The right to use a private or unpublished package has not been granted.')}`
+    }
+
+    if (rawJSON.licenseExpression.includes('SEE LICENSE IN')) {
+      errorChalk = chalk.cyan;
+      errorMessage = `Info: ${chalk.cyan('A custom license, or one which hasn’t been assigned an SPDX identifier, is in use.')}`
+    }
+
     const errorOutput = archy({
-      label: `License Expression: ${chalk.red(rawJSON.licenseExpression)}`,
+      label: `License Expression: ${errorChalk(rawJSON.licenseExpression)}`,
       nodes: [
-        `There are ${chalk.yellow(rawJSON.occurances)} occurances of ${chalk.red(license)}.`,
+        `There are ${chalk.yellow(rawJSON.occurances)} occurances of ${errorChalk(license)}.`,
         {
           label: `Conformance:`,
           nodes: [
-            `Error: ${chalk.red(rawJSON.conformance.error)}`
+            `${errorMessage}`
           ]
         },
         {
