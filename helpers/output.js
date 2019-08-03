@@ -32,6 +32,10 @@ function output(rawJSON, license) {
       errorMessage = `Warning: ${chalk.red('The right to use a private or unpublished package has not been granted.')}`
     }
 
+    if (rawJSON.licenseExpression === 'invalid license') {
+      errorMessage = `Warning: ${chalk.red('License declaration is missing or incorrectly formatted.')}`
+    }
+
     if (rawJSON.licenseExpression.includes('SEE LICENSE IN')) {
       errorChalk = chalk.cyan;
       errorMessage = `Info: ${chalk.cyan('A custom license, or one which hasn’t been assigned an SPDX identifier, is in use.')}`
