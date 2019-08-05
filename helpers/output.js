@@ -7,7 +7,7 @@ function output(rawJSON, license) {
     const successOutput = archy({
       label: `License Expression: ${chalk.green(rawJSON.licenseExpression)}`,
       nodes: [
-        `There are ${chalk.yellow(rawJSON.occurances)} occurances of ${chalk.green(license)}.`,
+        `There are ${chalk.yellow(rawJSON.occurrences)} occurrences of ${chalk.green(license)}.`,
         {
           label: `Conformance:`,
           nodes: [
@@ -28,7 +28,7 @@ function output(rawJSON, license) {
     const errorOutput = archy({
       label: `License Expression: ${chalk.red(rawJSON.licenseExpression)}`,
       nodes: [
-        `There are ${chalk.yellow(rawJSON.occurances)} occurances of ${chalk.red(license)}.`,
+        `There are ${chalk.yellow(rawJSON.occurrences)} occurrences of ${chalk.red(license)}.`,
         {
           label: `Conformance:`,
           nodes: [
