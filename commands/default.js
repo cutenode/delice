@@ -28,7 +28,7 @@ exports.handler = function (argv) {
 function buildPrettyPrint (directory, argv) {
   const licensesFromDir = licenses(directory)
 
-  for (let license in licensesFromDir) {
+  for (const license in licensesFromDir) {
     const packages = Object.keys(licensesFromDir[license].packages).sort(alphasort.ascending)
 
     const rawJSON = {
