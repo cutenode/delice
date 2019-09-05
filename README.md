@@ -80,7 +80,7 @@ Both [`liblice`](https://www.npmjs.com/package/liblice) and [`conformance`](http
 
 ### What is liblice?
 
-[liblice](https://www.npmjs.com/package/liblice) is the module that does the majority of the work to build out the data that delice surfaces to you. If you're looking to programatically get the kind of inofrmation you'd get from delice, check out liblice.
+[liblice](https://www.npmjs.com/package/liblice) is the module that does the majority of the work to build out the data that delice surfaces to you. If you're looking to programatically get the kind of information you'd get from delice, check out liblice.
 
 ### What is conformance?
 
