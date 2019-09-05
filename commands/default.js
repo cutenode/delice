@@ -37,8 +37,8 @@ function buildPrettyPrint (directory, argv) {
       conformance: licensesFromDir[license].conformance, // object that expands to all the things we want to expose
       packages: packages
     }
-    
-    if(argv.json === true) {
+
+    if (argv.json === true) {
       console.log(JSON.stringify(rawJSON, null, 2))
     } else {
       console.log(output(rawJSON, license))

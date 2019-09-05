@@ -1,8 +1,7 @@
 const archy = require('archy')
 const chalk = require('chalk')
 
-
-function output(rawJSON, license) {
+function output (rawJSON, license) {
   if (!rawJSON.conformance.error) {
     const successOutput = archy({
       label: `License Expression: ${chalk.green(rawJSON.licenseExpression)}`,
@@ -44,7 +43,6 @@ function output(rawJSON, license) {
 
     return errorOutput
   }
-
 }
 
 module.exports = output
