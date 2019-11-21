@@ -1,6 +1,5 @@
 const { licenses } = require('liblice')
 const alphasort = require('alpha-sort')
-const chalk = require('chalk')
 const { directoryOrDefault } = require('../helpers')
 const output = require('../helpers/output')
 
@@ -33,7 +32,7 @@ function buildPrettyPrint (directory, argv) {
 
     const rawJSON = {
       licenseExpression: license,
-      occurances: licensesFromDir[license].occurances,
+      occurrences: licensesFromDir[license].occurrences,
       conformance: licensesFromDir[license].conformance, // object that expands to all the things we want to expose
       packages: packages
     }

@@ -34,8 +34,8 @@ Running `delice` by itself will check the current working directory's `node_modu
 ## Output
 
 - License Expression
-  - A license expression that occured inside of `node_modules`
-- Occurances
+  - A license expression that occurred inside of `node_modules`
+- Occurrences
   - Number of times a license was read from a `package.json` in the given directory
 - Conformance
   - A set of data about license conformance
