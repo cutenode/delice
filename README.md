@@ -1,5 +1,7 @@
 # delice
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cutenode/delice.svg)](https://greenkeeper.io/)
+
 delice is a CLI intended to help you gain insight into your dependencies licenses.
 
 ## Usage
